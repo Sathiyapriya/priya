@@ -13,8 +13,9 @@ void countbits(int dec)
     int count=0;
     while(dec)
     {
-        dec >>= 1;
+        dec >>= 1;// dividing by 2^1
         count++;
     }
-    printf("\ncount of number of binarybits for the given decimal number is:%d",count);
+    printf("\n%d bits are required to represent the given decimal number,count);
 }
+ 
