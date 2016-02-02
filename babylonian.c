@@ -20,7 +20,7 @@ float accuracy =0.00001;
 while(x - y > accuracy)
 {
 	x = (x + y)/2;
-	y = n/x;
+	y = num/x;
 }
 return x;
 }
