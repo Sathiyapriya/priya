@@ -8,7 +8,7 @@ if(num<2)
 {
     return 2;
 }
-for(i=num; i>0; i++)
+for(i=num+1; i>0; i++)
 {
     for(j=2; j<i; j++)
     {
