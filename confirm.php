@@ -40,3 +40,4 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
  //Closing the database 
  mysqli_close($con);
 }
+?>
