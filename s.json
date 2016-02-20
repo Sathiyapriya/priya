@@ -1,0 +1,17 @@
+{
+   "ErrorCode":"000",
+   "ErrorMessage":"Success",
+   "JobId":"381a8090-b230-42fa-ac04-157cc2142bfa",
+   "MessageData":[
+      {
+         "MobileNumber":"919898xxxxxx ",
+         "MessageParts":[
+            {
+               "MessageId":"919898xxxxxx -67e3765cdf034f438a432eacb88d0c14",
+               "MessagePartId":1,
+               "MessageText":"test message"
+            }
+         ]
+      }
+   ]
+}
