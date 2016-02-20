@@ -3,7 +3,7 @@
  //this is applicable only when you are using Cheap SMS Bazaar
  define('SMSUSER','demo');
  define('PASSWORD','demoo');
- define('SENDERID','DFSDFSD');
+ define('SENDERID','SATHIYA');
  
  
  //This function will send the otp 
