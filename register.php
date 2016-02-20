@@ -1,9 +1,9 @@
 <?php 
  //Constants for our API
  //this is applicable only when you are using Cheap SMS Bazaar
- define('SMSUSER','your user name');
- define('PASSWORD','your password');
- define('SENDERID','your sender id');
+ define('SMSUSER','demo');
+ define('PASSWORD','demoo');
+ define('SENDERID','DFSDFSD');
  
  
  //This function will send the otp 
