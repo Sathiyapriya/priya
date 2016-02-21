@@ -55,9 +55,9 @@ void keep(int x)
 	        p->next = np;
 	        np->next = NULL;            
 	    }
-	}
-	void add()
-	{ 
+}
+void add()
+{ 
             int i = 0;
 	    struct node1 *t;
 	    struct node *v;
@@ -73,10 +73,9 @@ void keep(int x)
              t = t->link;
              v = v->next;
             }
-        }           
  }       
-	void traverse()
-	{
+void traverse()
+{
 	    struct node1 *q;
 	    q = head;
 	    int c = 0,i = 0;
@@ -97,14 +96,14 @@ void keep(int x)
 	    {
 	        printf(“%d\t”,x[i]);
 	    }
-	}
-	void swap(int *a,int *b)
-	{
+}
+void swap(int *a,int *b)
+{
 	    int temp;
 	    temp = *a;
 	    *a = *b;
 	    *b = temp;
-	}
+}
 int main()
 {
 	    int n, x, mod, mod1;
