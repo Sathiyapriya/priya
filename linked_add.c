@@ -1,23 +1,23 @@
 include<stdio.h>
-	int c = 0, c1 = 0;
-	struct node1
+int c = 0, c1 = 0;
+struct node1
 {
     struct node1 *link;
     int data1;
 }*head = NULL, *m = NULL, *np1 = NULL, *ptr = NULL;
 struct node
 {
-	    struct node *next;
-	    int data;
-	}*start = NULL, *p = NULL, *np = NULL;
-	void store(int x)
-	{
-	    struct node1 *np1;
-	    np1->data1 = x;
-	    np1->link = NULL;
+     struct node *next; 
+     int data;
+}*start = NULL, *p = NULL, *np = NULL;
+void store(int x)
+{
+	struct node1 *np1;
+	np1->data1 = x;
+	np1->link = NULL;
 	    if (c == 0)
 	    {
-        head = np1;
+                head = np1;
 	        m = head;
 	        m->link = NULL;
 	        c++;
@@ -25,24 +25,24 @@ struct node
 	    else
 	    {
 	        m = head;    
-        while (m->link != NULL)
+                while (m->link != NULL)
 	        {
 	            m = m->link;
 	        }
 	        m->link = np1;
 	        np1->link = NULL;          
-	    }
+	     }
 }
-	void keep(int x)
- {
+void keep(int x)
+{
 	    struct node *np;
 	    np->data = x;
 	    np->next = NULL;
-  if (c1 == 0)
+            if (c1 == 0)
 	    {
 	        start = np;
 	        p = start;
-        p->next = NULL;
+                p->next = NULL;
 	        c1++;
 	    }
 	    else
@@ -58,7 +58,7 @@ struct node
 	}
 	void add()
 	{ 
-    int i = 0;
+            int i = 0;
 	    struct node1 *t;
 	    struct node *v;
 	    t = head;
@@ -67,37 +67,13 @@ struct node
 	    {
 	        if (v == NULL)
 	        {
-	            t->data1 = t->data1 + i;
-	            i = t->data1 / 10;
-	            t->data1 = t->data1 % 10;
-	            if (t->link == NULL && i == 1)
-	            {
-                ptr = new node1;
-	                ptr->data1 = i;
-	                ptr->link = NULL;
-	                t->link = ptr;
-	                t = t->link;
-	            }
-	            t = t->link;
-	            continue;
-	        }   
-	        else
-        {
-            t->data1 = t->data1 + v->data + i;
-	            i = t->data1 / 10;
-	            t->data1 = t->data1 % 10;
-            if (t->link == NULL && i == 1)
-	            {
-	                ptr = new node1;
-	                ptr->data1 = i;
-	                ptr->link = NULL;
-                t->link = ptr;
-                t = t->link;
-	            }
-            t = t->link;
-            v = v->next;
-        }
-	    }           
+	         t->link = ptr;
+                 t = t->link;
+	        }
+             t = t->link;
+             v = v->next;
+            }
+        }           
  }       
 	void traverse()
 	{
@@ -105,8 +81,8 @@ struct node
 	    q = head;
 	    int c = 0,i = 0;
 	    while (q != NULL)
-    {
-        q = q->link;
+            {
+                q = q->link;
 	        c++;
 	    }
 	    q = head;
@@ -116,7 +92,7 @@ struct node
 	        i++;
 	        q = q->link;
 	    }
-	    cout<<"Result of addition for two numbers:";
+	    printf("Result of addition for two numbers:");
 	    for (i = 0; i < c; i++)
 	    {
 	        printf(“%d\t”,x[i]);
@@ -129,14 +105,14 @@ struct node
 	    *a = *b;
 	    *b = temp;
 	}
-	int main()
-	{
+int main()
+{
 	    int n, x, mod, mod1;
 	    Printf(“enter the value of x and n\n”);
 	    Scanf(“%d%d”,&x,&n);
 	    if (x > n)
 	    {
-        swap(&x,&n);
+        	swap(&x,&n);
 	    }
 	    while (n > 0)
 	    {
@@ -149,10 +125,10 @@ struct node
 	        mod1 = x % 10;
 	        x = x / 10;
 	        keep(mod1);
-	    }
-	    add();
-  traverse();
-	return 0;
-	}
+	    }	
+	 add();
+	 traverse();
+return 0;
+}
 
 
